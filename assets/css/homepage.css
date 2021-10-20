@@ -1,0 +1,135 @@
+div.homepagemain {
+    background-image: url(../images/homepage_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh);
+    width: 100%;
+
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+#circulerLogo {
+    width: 320px;
+    height: 320px;
+}
+
+#classMenu {
+    width: 350px;
+    height: 300px;
+}
+
+#characters {
+    position: relative;
+    top: 60px;
+    width: 290px;
+}
+
+.topBanner {
+    width: 400px;
+}
+
+.bottomBanner {
+    width: 700px;
+}
+
+.fullwidth {
+    width: 100%;
+    text-align: center;
+}
+
+#outter_content {
+    animation: rotate 22s linear infinite ;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#plank0 {
+    transform-origin: center;
+
+}
+
+#plank1 {
+    transform-origin: center;
+
+}
+
+#plank2 {
+    transform-origin: center;
+
+}
+
+#plank3 {
+    transform-origin: center;
+
+}
+
+#plank4 {
+    transform-origin: center;
+
+}
+
+#plank5 {
+    transform-origin: center;
+
+}
+
+#plank6 {
+    transform-origin: center;
+
+}
+
+#plank0:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+#plank1:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#plank2:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#plank3:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+#plank4:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#plank5:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#plank6:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.noselect {
+     -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;      
+}
+.btn {
+    cursor: pointer;
+}

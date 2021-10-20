@@ -1,0 +1,241 @@
+@import "font-awesome.min.css";
+
+div.main {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
+    background: #febbbb;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febbbb', endColorstr='#ff5c5c', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+    /* background: #0264d6;
+    /* Old browsers */
+    /* background: -moz-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%); */
+    /* FF3.6+ */
+    /* background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #0264d6), color-stop(100%, #1c2b5a)); */
+    /* Chrome,Safari4+ */
+    /* background: -webkit-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%); */
+    /* Chrome10+,Safari5.1+ */
+    /* background: -o-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%); */
+    /* Opera 12+ */
+    /* background: -ms-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%); */
+    /* IE10+ */
+    /* background: radial-gradient(ellipse at center, #0264d6 1%, #1c2b5a 100%); */
+    /* W3C */
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0264d6', endColorstr='#1c2b5a', GradientType=1); */
+    /* IE6-9 fallback on horizontal gradient */
+    height: calc(100vh);
+    width: 100%;
+}
+
+div.main {
+    background-image: url(../images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+/* * {
+    box-sizing: border-box;
+    margin: 0px auto;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+
+} */
+
+body {
+
+    color: #606468;
+    font: 87.5%/1.5em 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    border: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0;
+    -webkit-appearance: none;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 0;
+}
+
+/* .clearfix {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+} */
+
+.container {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------- LOGIN ---------- */
+
+/* #login form {} */
+
+#login {
+    display: inline-block;
+}
+
+/* #login {} */
+
+.frmback {
+    background-color: rgb(235, 235, 235);
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 49px -5px rgba(138, 138, 138, 1);
+}
+
+.logo {
+    margin-left: 40px;
+    justify-items: center;
+    width: auto;
+    align-self: center;
+}
+
+.fp {
+    font-size: 0.7em;
+    color: hsl(358, 34%, 23%);
+}
+
+.nb {
+    color: red;
+}
+
+.nav-link {
+    color: rgba(179, 179, 179, 0.65);
+    font-weight: bold;
+}
+
+video {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#login form span.fa {
+    content: "\f007";
+    background-color: #fff;
+    display: block;
+    float: left;
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    align-content: center;
+    width: 40px;
+    margin-right: 2px;
+    color: rgb(134, 43, 27);
+}
+
+.fa-user:before {
+    content: "\f007"
+}
+
+.fa-film:before {
+    content: "\f008"
+}
+
+#login form input {
+    height: 50px;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+}
+
+#login form input[type="text"],
+input[type="password"] {
+    border: 1px solid rgb(163, 163, 163);
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 200px;
+}
+
+#login form input[type="submit"] {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #000000;
+    color: #eee;
+    font-weight: bold;
+    /* margin-bottom: 2em; */
+    text-transform: uppercase;
+    padding: 5px 10px;
+    height: 30px;
+}
+
+#login form input[type="submit"]:hover {
+    background-color: #d44179;
+}
+
+#login>p {
+    text-align: center;
+}
+
+#login>p span {
+    padding-left: 5px;
+}
+
+.middle {
+    display: flex;
+    width: 600px;
+}
+
+object {
+    color: white;
+    background-color: white;
+    width: 220px;
+}
