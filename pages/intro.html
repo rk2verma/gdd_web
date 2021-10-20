@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDD V1.0</title>
+    <link rel="stylesheet" href="../assets/css/login.css" />
+    <style>
+        body {
+            background-image: url(../assets/images/bg1e.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+
+        .video .buttons {
+            position: absolute;
+            bottom: 20px;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .videobtn {
+            color: black;
+            font-weight: bold;
+            border: none;
+            padding: 8px 16px;
+            background-color: rgb(10, 214, 250);
+        }
+
+        .videobtn:hover {
+            border: none;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(4, 106, 138);
+            padding: 10px 18px;
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video">
+        <video preload="metadata" id="introvideo" width="100%" autoplay="true">
+            <source src="../assets/media/video/intro.mp4" type="video/mp4">
+            <source src="../assets/media/video/intro.webm" type="video/webm">
+            Your browser does not support the HTML5 Video element.
+        </video>
+        <div class="buttons">
+            <button type="button" onclick="location.href = '../pages/login.html';" class="btn btn-primary videobtn">Skip
+                to
+                Login</button>
+        </div>
+    </div>
+    <script>
+        var video=document.getElementsByTagName('video')[0];
+        video.addEventListener('loadedmetadata', function () {
+            if (video.buffered.length === 0) return;
+
+            var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
+            console.log(bufferedSeconds + ' seconds of video are ready to play!');
+        });
+    </script>
+    <script type="text/javascript">
+        var video = document.getElementById('introvideo');
+        video.addEventListener('ended', function () {
+            location.href = '../pages/login.html';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GDD V1.0</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0b819e081f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <center>
+                <div class="middle">
+                    <div class="frmback">
+                        <ul class="nav nav-pills mb-3 nb" style="margin: 0;" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Sign In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Sign Up</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div id="login">
+                                    <form action="javascript:void(0);" method="get">
+                                        <fieldset class="clearfix">
+                                            <p>
+                                                <span class="fa fa-user"></span><input type="text"
+                                                    Placeholder="Username" required>
+                                            </p>
+                                            <!-- JS because of IE support; better: placeholder="Username" -->
+                                            <p>
+                                                <span class="fa fa-lock"></span><input type="password"
+                                                    Placeholder="Password" required>
+                                            </p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+                                            <div>
+                                                <span
+                                                    style="width:48%; text-align:left; display: inline-block;line-height: 0.8em; vertical-align: middle;">
+                                                    <a class="fp" href="#">Forgot password?</a>
+                                                </span>
+                                                <span style=" width:50%; text-align:right; display: inline-block;">
+                                                    <input type="submit"
+                                                        onclick="location.href = '../pages/classhome.html';"
+                                                        value="Sign In">
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <div class="clearfix"></div>
+                                    </form>
+                                    <div class="clearfix"></div>
+                                </div> <!-- end login -->
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div id="login">
+                                    <form action="javascript:void(0);" method="get">
+                                        <fieldset class="clearfix">
+                                            <p>
+                                                <span class="fa fa-user"></span><input type="text"
+                                                    Placeholder="Student Name" required>
+                                            </p>
+                                            <p>
+                                                <span class="fa fa-user"></span><input type="text"
+                                                    Placeholder="Username" required>
+                                            </p>
+                                            <!-- JS because of IE support; better: placeholder="Username" -->
+                                            <p>
+                                                <span class="fa fa-lock"></span><input type="password"
+                                                    Placeholder="Password" required>
+                                            </p> <!-- JS because of IE support; better: placeholder="Password" -->
+                                            <div>
+                                                <!-- <span style="width:100%; margin-bottom: 8px; margin-top: 5px;text-align:right; display: inline-block;"><a
+                                                        class="signinbtn"">Sign Up</a>
+                                                </span> -->
+                                                <span style=" width:100%; text-align:right; display: inline-block;">
+                                                    <input type="submit" onclick="" value="Sign Up">
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <div class=" clearfix"></div>
+                                    </form>
+                                    <div class="clearfix"></div>
+                                </div> <!-- end login -->
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">...</div>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <object style="background-color: transparent;" data="../assets/images/gddlogo.svg"
+                            type="image/svg+xml"></object>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
