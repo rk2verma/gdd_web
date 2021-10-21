@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g transform="scale(0.5,0.5) translate(0,1)">
+    <defs>
+             <clipPath id="clip" >
+<path stroke="red" d="m13.6 13.5 0-6.8-7.3 0 0 6.8-2 0 0-14.9 2 0 0 6.4 7.3 0 0-6.4 2 0 0 14.9-2 0z"/>
+    </clipPath>
+         </defs> 
+                   
+ <path id="thePath" stroke="blue" d="M5.3 -1V13.3" stroke-width="2" style="clip-path:url(#clip)"  />
+    <path id="thePath2" stroke="blue" d="M5.4 5.8 h10" stroke-width="2" style="clip-path:url(#clip)"  />
+    <path id="thePath1" stroke="blue" d="M14.6 -1 v14.5" stroke-width="2" style="clip-path:url(#clip)"  />
+    
+ 
+  </g>
+  
+</svg>
+<style>
+svg {width:300vh}
+path{fill:none;}
+
+#thePath{stroke-dasharray:85;stroke-dashoffset:85;
+animation: dash 2s 0.0s linear forwards;}
+#thePath1{stroke-dasharray:55;stroke-dashoffset:55;
+animation: dash1 1s 1.0s linear forwards;}
+#thePath2{stroke-dasharray:85;stroke-dashoffset:85;
+animation: dash2 1s 2.0s linear forwards;}
+
+
+@keyframes dash {  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash1 {  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash2 {  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+<style>
+<html>
+
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<svg version="1.1" viewBox="10 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g transform="scale(2.5,3.1) translate(19,-1)">
+    <defs>
+             <clipPath id="clip" >
+<path  d="m4 2.6 0 17.3-2.3 0 0-17.3 2.3 0z" />
+    </clipPath>
+        </defs>
+                   
+   <path id="thePath" stroke="blue" d="M2.9 2.7V20" stroke-width="2" style="clip-path:url(#clip)"  />
+    <path id="thePath1" stroke="blue" d="M14.6 12.9 8.5 18.4 9.3 18 15.5 24.7" stroke-width="2" style="clip-path:url(#clip)" />
+    
+  </g>
+  
+</svg>
+<style>
+svg{width:36vh}
+path{fill:none;}
+
+#thePath{stroke-dasharray:70;stroke-dashoffset:70;
+animation: dash 2s linear forwards;}
+/*#thePath1{stroke-dasharray:70;stroke-dashoffset:70; 
+animation: dash 1.5s 1.0s linear forwards;}
+*/
+@keyframes dash { 
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+<style>
+<html>
