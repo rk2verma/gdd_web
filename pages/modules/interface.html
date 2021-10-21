@@ -19,7 +19,7 @@
 <body>
     
 <div class="header">
-  		<a href="#default" class="logo"><img src="../../assets/images/gddlogo.svg" width="100px" height="30px"></a>
+  		<a href="#default" onclick="launchFullScreen(document.documentElement)" class="logo"><img src="../../assets/images/gddlogo.svg" width="100px" height="30px"></a>
 		<a class="subject active" style="width: 150px;" >Subject</a>
   		
   		<div class="header-right">
@@ -91,6 +91,16 @@
   	$('#toc').click(function(){
   		location.reload();
   	});
+
+  	function launchFullScreen(element) {
+        if(element.requestFullScreen) {
+            element.requestFullScreen();
+        } else if(element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen();
+        }
+    }
   	
   	
 
