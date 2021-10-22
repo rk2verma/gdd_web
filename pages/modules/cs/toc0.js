@@ -11,7 +11,7 @@ var tocDes = [{
     "ref" : "./cs/content/color/BAct_C03.html"
 },
 {
-    "desc" : "4. Number Names 1 to 20",
+    "desc" : "4. Number Names 1 to 20 TT",
     "ref" : "./eng/content/pof/Part_of_face.html"
 }/*,
 {
