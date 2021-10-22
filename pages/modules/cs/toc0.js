@@ -9,11 +9,11 @@ var tocDes = [{
 {
     "desc" : "3. Color-3",
     "ref" : "./cs/content/color/BAct_C03.html"
-}/*,
+},
 {
     "desc" : "4. Number Names 1 to 20",
-    "ref" : "./eng/content/video/Number Names 1-20.mp4"
-},
+    "ref" : "./eng/content/pof/Part_of_face.html"
+}/*,
 {
     "desc" : "5. Parts of Face ",
     "ref" : "./eng/content/pof/Part_of_face.html"
