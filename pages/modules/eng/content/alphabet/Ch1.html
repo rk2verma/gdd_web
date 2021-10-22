@@ -5505,47 +5505,47 @@ URL for more Information: http://www.adobe.com/go/font_vendor_id?ID=TMC&Name=Ari
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script type="text/javascript" src="Ch1.js"></script>
    <script type="text/javascript">
-   		
+    
    		//init();
-   	function stopMusic(){
-		music.pause();
-    	audioId = 2;
-	}
-function feedMusic(bool){
-	music.pause();
-    audioId = 2;
-    var num = Math.floor(Math.random()*5);
-    if(bool){
-    	music = new Audio('audio/OAct12/Correct'+num +'.mp3');
-    }else{
-    	music = new Audio('audio/OAct12/Wrong'+num +'.mp3');
+        function stopMusic(){
+          music.pause();
+          audioId = 2;
+       }
+       function feedMusic(bool){
+        music.pause();
+        audioId = 2;
+        var num = Math.floor(Math.random()*5);
+        if(bool){
+          music = new Audio('audio/OAct12/Correct'+num +'.mp3');
+       }else{
+          music = new Audio('audio/OAct12/Wrong'+num +'.mp3');
+       }
+
+       music.play();
+
     }
-
- 	music.play();
-
-}
-function endMusic(){
-	music = new Audio('audio/OAct12/'+ 'train.mp3');
- 	music.play();
-}
-function onclickMethod(){
-  console.log("Hi ")
-}
-function overlayClicked(id){
-		 document.getElementById("overlay").style.display = "none";
-		 playMusic();
-    var src1 = 'audio/EAct01/inst'+id+ '.mp3';
+    function endMusic(){
+     music = new Audio('audio/OAct12/'+ 'train.mp3');
+     music.play();
+  }
+  function onclickMethod(){
+    console.log("Hi ")
+ }
+ function overlayClicked(id){
+   document.getElementById("overlay").style.display = "none";
+   playMusic();
+   var src1 = 'audio/EAct01/inst'+id+ '.mp3';
 }
 var music;
 var audioList = ['activity','menu','train'];
 var audioFeed = [];
 var audioId = 0;
 function playMusic(){
-    var id=displayId;
-			music = new Audio('audio/EAct01/inst'+id+ '.mp3');
+ var id=displayId;
+ music = new Audio('audio/EAct01/inst'+id+ '.mp3');
     //  music.play();
- 	}
-  
+ }
+ 
 
-   </script>
+</script>
 </html>
