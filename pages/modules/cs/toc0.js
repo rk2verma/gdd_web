@@ -30,7 +30,7 @@ var tocDes = [{
 }*/];
 createTOC(headTitle);
 =======
-var tocDes = [{
+/*var tocDes = [{
     "desc" : "1. Color-1 ",
     "ref" : "./cs/content/color/BAct_C01.html"
 },
@@ -58,6 +58,7 @@ var tocDes = [{
 {
     "desc" : "Jason",
     "ref" : "path"
-}*/];
+}];
 createTOC();
->>>>>>> 91184d2019fe95181c300285e1f095f648a7f4ec
+
+*/
