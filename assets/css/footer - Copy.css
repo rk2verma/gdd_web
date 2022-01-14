@@ -1,0 +1,46 @@
+.footer {
+  overflow: hidden;
+  background-color: #418330;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.footer div a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footer div a.active:hover {
+  background: #f1f1f1;
+  color: black;
+  cursor: pointer;
+}
+.footer div a:hover {
+  cursor: default;
+}
+
+.footer div a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#toc{
+  float: left;
+  background-color: #3b7304; 
+  padding: 0px;
+} 
+#next_btn,#back_btn{
+  float: right; 
+  background-color: #3b7304; 
+  padding: 2px;
+}
+
+.footer div a.not-active {
+  background-color: #04AA6D;
+  color: white;
+}

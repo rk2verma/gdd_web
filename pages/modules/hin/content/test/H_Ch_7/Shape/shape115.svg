@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="453px" height="43px"
+xml:space="preserve">
+<g id="PathID_104" transform="matrix(1, 0, 0, 1, 230.65, 22.25)">
+<linearGradient
+id="LinearGradID_4" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0, -0.0476379, 0.0827179, 0, -4.55, -1.05)" spreadMethod ="pad" x1="-819.2" y1="0" x2="819.2" y2="0" >
+<stop  offset="0" style="stop-color:#ABE6FE;stop-opacity:1" />
+<stop  offset="1" style="stop-color:#F9FFEE;stop-opacity:1" />
+</linearGradient>
+<path style="fill:url(#LinearGradID_4) " d="M221.15 -19.1L221.15 17Q221.15 19.7 212.45 19.7L-221.45 19.7Q-230.15 19.7 -230.15 17L-230.15 -19.1Q-230.15 -21.75 -221.45 -21.75L212.45 -21.75Q221.15 -21.75 221.15 -19.1" />
+<path style="fill:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;stroke:#FFFFFF;stroke-opacity:1" d="M221.15 -19.1L221.15 17Q221.15 19.7 212.45 19.7L-221.45 19.7Q-230.15 19.7 -230.15 17L-230.15 -19.1Q-230.15 -21.75 -221.45 -21.75L212.45 -21.75Q221.15 -21.75 221.15 -19.1z" />
+</g>
+</svg>

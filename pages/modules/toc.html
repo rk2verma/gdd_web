@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <style type="text/css">
+        #toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 0px;
+    width: 100%;
+}
+.toc_list_left {
+   float: left;
+    width: 50%;
+    position: relative;
+    padding-top: 0px;
+    
+}
+.toc_list_right {
+   float: left;
+    width: 50%;
+    position: relative;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+@media (max-width: 600px) {
+  .toc_list_left{
+    width: 100%;
+    height: auto;
+  }
+  .toc_list_right  {
+    width: 100%;
+    height: auto;
+     margin-top: -30px;
+  }
+ 
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+.toc_title {
+    font-size: 2vw;
+}
+ul li {
+       /* font-size:1.8vw;"*/
+    }
+
+@media screen and (min-width: 601px max-width: 1200px) {
+  ul li  {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  ul li  {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ ul li {
+    font-size: 15px;
+  }
+}
+a { text-decoration: none; }
+
+/***  header style  */
+
+/* Style the header with a grey background and some padding */
+
+
+/***   end header style */
+    </style>
+
+</head>
+
+<body>
+    
+   
+    <div id="toc_container">
+        <p class="toc_title">Class-Title</p>
+    <div class="toc_list_left">
+        <ul >
+            
+        </ul>
+    </div>
+    <div class="toc_list_right">
+        <ul >
+                     
+        </ul>
+    </div>
+</div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!--  <script type="text/javascript" src="../../../assets/js/nextBack.js"></script> -->
+    
+    <script type="text/javascript">
+       var clsref = ["KG","1","2","3","4","5"];
+         var curPg,btnArr;
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);  
+        const cls = urlParams.get('cls');
+        const subj= urlParams.get('sub');
+        function addScript(mm) {
+          var kk=mm;
+          var s = document.createElement( 'script' );
+          s.setAttribute( 'src', subj+"/toc"+mm+".js" );
+          document.body.appendChild( s );
+        } 
+       
+        function createTOC(tit){
+            $('.toc_title').html('Class-'+clsref[cls]+tit);
+
+            for (i = 0; i <= tocDes.length - 1; i++) {
+                var li = document.createElement('li');     // create li element.
+                var aa = document.createElement('a');
+                aa.setAttribute('hrefa',tocDes[i].ref);
+                aa.setAttribute('href',"#")
+                aa.innerHTML = tocDes[i].desc;          //assigning text to li using array value.
+                li.setAttribute('gddPageId',i);
+                li.appendChild(aa);     // append li to ul.
+                if(i<Math.ceil(tocDes.length/2)){
+                    $('.toc_list_left ul').append(li);
+                }else{
+                     $('.toc_list_right ul').append(li);
+                }                     
+            }
+            $('ul li').click(function(e){
+                curPg = $(this).attr("gddPageId");
+                
+                window.top.setData(tocDes,curPg);                
+            });
+        }
+        
+        addScript(cls);
+    </script>
+</body>
+</html>

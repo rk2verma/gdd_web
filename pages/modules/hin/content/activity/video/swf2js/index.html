@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<script type="text/javascript" src="swf2js.js"></script>
+
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    displayId = urlParams.get('id');
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container2");
+        container.appendChild(player);
+        player.load("file 004.swf");
+    });
+</script>
+<script src="ruffle.js"></script>
+<div id="container2"/>
+</html>

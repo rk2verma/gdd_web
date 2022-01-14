@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../assets/css/header.css">
+     <link rel="stylesheet" href="../../assets/css/content.css">
+     <link rel="stylesheet" href="../../assets/css/footer.css">
+     <link rel="stylesheet" href="../../assets/css/common.css">
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">       
+
+
+
+    </style>
+
+</head>
+
+<body>
+    
+<div class="header">
+  		<a href="#default" class="logo"><img src="../../assets/images/gddlogo.svg" width="100px" height="30px"></a>
+		<a class="subject active" style="width: 150px;" >Subject</a>
+  		
+  		<div class="header-right">
+    		<a class="myCls active noselect btn" style="margin-right: 10px; width:150px">Class</a>
+    		<a id="home" class="noselect " href="#">Home</a>
+    	<!-- 	<a href="#contact">Contact</a>
+    		<a href="#about">About</a> -->
+
+  		</div>
+
+
+</div>
+<div id="toc_container" >
+	
+</div>
+<div class="footer">
+  <!-- <a href="#next_btn" class="active">Next</a> -->
+  <a id="next_btn" href="#" >Next</a>
+  <a id="back_btn" href="#">Back</a>
+  <a class="footer-right" id="toc" href="#">TOC</a>
+</div>
+<script type="text/javascript">
+	$('#next_btn').hide();
+	$('#back_btn').hide();
+	$('#home').click(function(){
+		location.href = '../classhome.html';
+	});
+	initInterface();
+	function initInterface(){
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);  
+		const cls = urlParams.get('cls');  
+  		const sub = urlParams.get('sub');
+ 		updateAndLoad(cls,sub);
+  	}
+  	function updateAndLoad(a,b){
+  		var clsref = ["KG","1","2","3","4","5"];
+  		const sub = new Map([
+		  ["asse", 'Assessments'],
+		  ["cs", 'Color &amp; Shapes'],
+		  ["eng", 'English'],
+		  ["gs", 'General Studies'],
+		  ["hin", 'Hindi'],
+		  ["mat", 'Mathematics'],
+		  ["ve", 'Value Education'],
+		]);
+  		
+  		$('.myCls').html("Class-"+clsref[a]);
+  		$('.subject').html(sub.get(b));
+  		$('.myCls').click(function(){
+  			location.href = '../classes/class.html?id='+a;
+  		});
+  		//$('')
+  		//function load_toc() {
+  			$('#toc_container').width('97%');
+  			//console.log($(window).height());
+  			$('#toc_container').height($(window).height()-$('.header').height()-$('.footer').height()-25);
+  			document.getElementById("toc_container").innerHTML='<object  type="text/html" data="'+b+'/toc_'+a+'.html" ></object>';	
+
+  			$('#toc_container object').width('100%');
+  			$('#toc_container object').height('100%');
+  			$('#toc_container object').css('padding','0');
+  			/*$('#toc_container').css('margin-top','-80px');*/
+  	}
+  	$('#toc').click(function(){
+  		location.reload();
+  		$('#next_btn').hide();
+	$('#back_btn').hide();
+
+  	});
+
+	    
+	
+
+</script>
+</html>

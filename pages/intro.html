@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDD V1.0</title>
     <link rel="stylesheet" href="../assets/css/login.css" />
@@ -43,7 +43,7 @@
     </style>
 </head>
 
-<body>
+<body onload="initfs()">
     <div class="video">
         <video preload="metadata" id="introvideo" width="100%" autoplay="true">
             <source src="../assets/media/video/intro.mp4" type="video/mp4">
@@ -70,6 +70,17 @@
         video.addEventListener('ended', function () {
             location.href = '../pages/login.html';
         });
+        function initfs(){
+            var el=document.documentElement, rfs = el.requestFullScreen || el.webkitRequestFullScreen|| el.mozRequestFullScreen    ;
+            rfs.call(el);
+        }
+        window.onload = function() {
+        var el = document.documentElement,
+            rfs = el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen;
+        rfs.call(el);
+    };
     </script>
 </body>
 

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
-   <title>Capital alphabets </title>
+   <title> Parts of Body </title>
    <meta name="viewport" content="width=device-width">
-
+   <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
    <head>
-    
+   
   
    </head>
    <body style="transform: scale(1);">
@@ -32,9 +33,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1024"
-   height="618"
-   viewBox="0 15 270 183"
+   width="300mm"
+   height="165mm"
+   viewBox="-10 10 300 215"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
@@ -525,7 +526,7 @@ URL for more Information: http://www.adobe.com/go/font_vendor_id?ID=TMC&Name=Ari
                  font-size="23px"
                  fill="#ffffff"
                  xml:space="preserve"
-                 id="tspan165">English Alphabet – Capital Letters </tspan></text>
+                 id="tspan165">English Alphabet - Capital Letters </tspan></text>
           </g>
         </g>
         <g
@@ -5437,7 +5438,7 @@ URL for more Information: http://www.adobe.com/go/font_vendor_id?ID=TMC&Name=Ari
    <style type="text/css">
    	#overlay {
 	  position: fixed; /* Sit on top of the page content */
-	  display: block; /* Hidden by default */
+	  display: none; /* Hidden by default */
 	  width: 100%; /* Full width (cover the whole page) */
 	  height: 100%; /* Full height (cover the whole page) */
 	  top: 0;
@@ -5501,51 +5502,54 @@ URL for more Information: http://www.adobe.com/go/font_vendor_id?ID=TMC&Name=Ari
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   }
+  svg,html {
+   overflow: hidden;
+  }
    </style>
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script type="text/javascript" src="Ch1.js"></script>
    <script type="text/javascript">
-    
+   		
    		//init();
-        function stopMusic(){
-          music.pause();
-          audioId = 2;
-       }
-       function feedMusic(bool){
-        music.pause();
-        audioId = 2;
-        var num = Math.floor(Math.random()*5);
-        if(bool){
-          music = new Audio('audio/OAct12/Correct'+num +'.mp3');
-       }else{
-          music = new Audio('audio/OAct12/Wrong'+num +'.mp3');
-       }
-
-       music.play();
-
+function stopMusic(){
+		music.pause();
+    	audioId = 2;
+	}
+function feedMusic(bool){
+	music.pause();
+    audioId = 2;
+    var num = Math.floor(Math.random()*5);
+    if(bool){
+    	music = new Audio('audio/OAct12/Correct'+num +'.mp3');
+    }else{
+    	music = new Audio('audio/OAct12/Wrong'+num +'.mp3');
     }
-    function endMusic(){
-     music = new Audio('audio/OAct12/'+ 'train.mp3');
-     music.play();
-  }
-  function onclickMethod(){
-    console.log("Hi ")
- }
- function overlayClicked(id){
-   document.getElementById("overlay").style.display = "none";
-   playMusic();
-   var src1 = 'audio/EAct01/inst'+id+ '.mp3';
+
+ 	music.play();
+
+}
+function endMusic(){
+	music = new Audio('audio/OAct12/'+ 'train.mp3');
+ 	music.play();
+}
+function onclickMethod(){
+  console.log("Hi ")
+}
+function overlayClicked(id){
+		 document.getElementById("overlay").style.display = "none";
+		 playMusic();
+    var src1 = 'audio/EAct01/inst'+id+ '.mp3';
 }
 var music;
 var audioList = ['activity','menu','train'];
 var audioFeed = [];
 var audioId = 0;
 function playMusic(){
- var id=displayId;
- music = new Audio('audio/EAct01/inst'+id+ '.mp3');
+    var id=displayId;
+			music = new Audio('audio/EAct01/inst'+id+ '.mp3');
     //  music.play();
- }
- 
+ 	}
+  
 
-</script>
+   </script>
 </html>

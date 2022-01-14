@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US" encoding="UTF-8" >
+   <title> Audio Test </title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+   <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+   <head>
+   
+  
+   </head>
+   <body style="transform: scale(1);">
+
+	<div id="overlay" onclick="testAud()">
+  		<div style="text-align: center; font-size: 40px; margin-top: 30%; color: red; ">Play</div>
+	</div>
+ 	<!-- <audio id="main_audio" src="../../../../pages/audio/mcq/mcqsfx.mp3" autoplay="true" ></audio> -->
+   <!-- <audio id="main_audio" src="../../../../pages/audio/common/activity.mp3" autoplay="true" ></audio> -->
+	<div style="text-align:center;" id="svgRoot">
+	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+</div>
+</body>
+
+   <style type="text/css">
+    svg {width: 100%; height: auto;}
+    #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+ 
+  .disabled1{
+    -webkit-user-select: none;
+    -moz-user-select: none;  // this is for mozila firefox
+    -khtml-user-select: none;
+    -webkit-touch-callout: none; // this is for iOS safari
+    -ms-user-select: none;
+    user-select: none; // not defined but this works on chrome and some other browsers
+    }
+ 
+  svg {
+    align-content: center;
+    margin: auto;
+  }
+  
+  .inactive {
+      filter : brightness(0.7) sepia(1) hue-rotate(173deg) saturate(0.4);
+      opacity: 0.97;
+  }
+
+#layer1 {
+   max-height: 100%;
+   max-width: 100%;
+   margin: auto;
+}
+html{
+   overflow: hidden;
+  }
+   </style>
+	<!-- <script src="./quest_pof.js"></script> -->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- <script src="../../../../../assets/js/mcq.js"></script> -->
+   <script type="text/javascript">
+      
+/*
+
+'aakash.mp3','aam.mp3','aedi.mp3','aienak.mp3','ajgar.mp3','anar.mp3','andaa.mp3','aurat.mp3','aushadh.mp3','eekh.mp3','eemli.mp3','eenam.mp3','eid.mp3','ektara.mp3','etihasik.mp3','odhni.mp3','okhli.mp3','rishi.mp3','unees.mp3','upgrah.mp3','usha.mp3','uun.mp3'
+
+
+'kachra.mp3','khat.mp3','ganna.mp3','gaj.mp3','ghar.mp3','kadai.mp3','khargos.mp3','Nga.mp3','ghadi.mp3'
+'chasma.mp3','chhatri.mp3','jewarat.mp3','jahaaj.mp3','jhagda.mp3','charkha.mp3','chhat.mp3','Yan.mp3','jhanda.mp3'
+'tamatar.mp3','thathera.mp3','damru.mp3','danda.mp3','dhakkan.mp3','tokri.mp3','thappa.mp3','NA.mp3','dhal.mp3'
+
+'dadi.mp3','darwaja.mp3','dhaan.mp3','dhan.mp3','naag.mp3','nayan.mp3','taare.mp3','tarbuj.mp3','thaali.mp3','tharmas.mp3'
+'bakri.mp3','bartan.mp3','bhawan.mp3','bhojan.mp3','fal.mp3','fauz.mp3','mahal.mp3','mandir.mp3','pashu.mp3','patang.mp3'
+'ladka.mp3','ladki.mp3','raja.mp3','rath.mp3','shahar.mp3','shalgam.mp3','shat.mp3','shatkon.mp3','var.mp3','wakil.mp3','yamraj.mp3','yuwak.mp3'
+'gyaani.mp3','gyaani2.mp3','haath.mp3','hal.mp3','kshtriya.mp3','kshtriya2.mp3','santra.mp3','seb.mp3','tribhuj.mp3','trishul.mp3'
+
+
+
+
+22+27+42=91
+
+var imgArr=[['anaar','ajgar','aam','aakash'],
+            ['imli','inaam','eid','eikh'],['usha','upgrah','uun','uunees'],
+            ['ektaara','aidi','aeinak','aeitihasik'],['okhli','odhni','aurat','aushadh'],
+            ['anda','rishi']];
+
+
+var imgArr = [['kachra','khat','ganna','gaj','ghar','kadahi','khargos','Nga','ghadi1'],
+            ['chasma','chhatri','jewraat','jahaaj','jhanda','charkha','chhat','eyan','jhagda2'],
+            ['tamatar','thathera','damru','danda','dhakkan','tokri','thappa','NA','dhal']];
+
+
+var imgArr= [['tarbuj','tharmas','darwaja','dadi','dhan','taare','thaali','naag','nayan','dhaan'],
+            ['patang','fal','bakri','mandir','bhawan','pashu','bartan','fauz','mahal','bhojan'],
+            ['yamraj','rath','ladki','var','shahar','wakil','yuwak','shatkon','raja','ladka','shalgam','shat'],
+            ['seb','hal','kshtriya','trishul','santra','haath','gyaani','tribhuj','tridev','shramik']];
+
+*/
+
+      var audArr = ['273.mp3','382.mp3','385.mp3','392.mp3','395.mp3','401.mp3','404.mp3','409.mp3',
+      '412.mp3','86.mp3'];
+      var aud,id=0;
+      testAud();
+      function testAud(){
+         console.log(audArr[id])
+         aud = new Audio(audArr[id]);
+         aud.play();
+         aud.onended=function(){
+            alert('Just Played '+audArr[id]);
+            id++;
+            if(id<audArr.length){               
+               setTimeout(testAud,400);
+            }
+         }
+      }
+   </script>
+</html>
+
+
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-control" content="no-cache">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+   <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+     <link rel="stylesheet" href="../../assets/css/content.css">
+     <link rel="stylesheet" href="../../assets/css/footer.css">
+     <link rel="stylesheet" href="../../assets/css/common.css">
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script type="text/javascript" src="../../assets/js/nextBack.js"></script>
+    <style type="text/css">       
+
+
+
+    </style>
+
+</head>
+
+<body>
+    
+<div class="header">
+  		<a href="#default" onclick="launchFullScreen(document.documentElement)" class="logo"><img src="../../assets/images/gddlogo.svg" width="100px" height="30px"></a>
+		<a class="subject active" style="width: 150px;" >Subject</a>
+  		
+  		<div class="header-right">
+    		<a class="myCls active noselect btn" style="margin-right: 10px; width:150px">Class</a>
+    		<a id="home" class="noselect " href="#">Home</a>
+    	<!-- 	<a href="#contact">Contact</a>
+    		<a href="#about">About</a> -->
+
+  		</div>
+
+
+</div>
+<div class="toc_box">
+<div id="toc_container" ></div>
+</div>
+<div class="footer">
+	<div id="next_btn">
+		<a class='active' href="#" >Next</a>
+	</div>
+	<div id="back_btn">
+		<a class='active' href="#">Back</a>
+  </div>
+	<div id="toc">
+		<a class='active' href="#">TOC</a>
+  </div>
+  	
+	</div>
+
+<script type="text/javascript">
+	$('#next_btn').hide();
+	$('#back_btn').hide();
+	$('#home').click(function(){
+		location.href = '../classhome.html';
+	});
+	initInterface();
+	function initInterface(){
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);  
+		const cls = urlParams.get('cls');  
+  		const sub = urlParams.get('sub');
+ 		updateAndLoad(cls,sub);
+  	}
+  	function updateAndLoad(a,b){
+  		var clsref = ["KG","1","2","3","4","5"];
+  		const sub = new Map([
+		  ["asse", 'Assessments'],
+		  ["cs", 'Color &amp; Shapes'],
+		  ["eng", 'English'],
+		  ["gs", 'General Studies'],
+		  ["hin", 'Hindi'],
+		  ["mat", 'Mathematics'],
+		  ["ve", 'Value Education'],
+		]);
+  		
+  		$('.myCls').html("Class-"+clsref[a]);
+  		$('.subject').html(sub.get(b));
+  		$('.myCls').click(function(){
+  			location.href = '../classes/class.html?id='+a;
+  		});
+  			$('#toc_container').width('100%');
+  			$('#toc_container').height($(window).height()-$('.header').height()-$('.footer').height()-45);
+  			document.getElementById("toc_container").innerHTML='<object  type="text/html" data="'+'toc.html?cls='+a+'&sub='+b+'"></object>';	
+
+  			$('#toc_container object').width('100%');
+  			$('#toc_container object').height('90%');
+  			$('#toc_container').css('padding','0');
+  			$('#toc_container object').css('padding','0');
+  		}
+  	$('#toc').click(function(){
+  		location.reload();
+  	});
+
+  	function launchFullScreen(element) {
+        if(element.requestFullScreen) {
+            element.requestFullScreen();
+        } else if(element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen();
+        }
+    }
+  	
+  	
+
+</script>
+</html>

@@ -1,0 +1,435 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="800px" height="600px" viewBox="0 0 800 600">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="-0.6" y1="24.6125" x2="-0.6" y2="-20.6125" spreadMethod="pad">
+<stop  offset="0%" stop-color="#A5E4F6"/>
+
+<stop  offset="100%" stop-color="#D1EDF6"/>
+</linearGradient>
+
+<image id="flash0_copy_2" x="0" y="0" width="166" height="141" xlink:href="./images/flash0_copy_2.png"/>
+
+<image id="Colorful_Kachra_copy_jpg" x="0" y="0" width="400" height="266" xlink:href="./images/Colorful_Kachra_copy_jpg.jpg"/>
+
+<image id="elephant_002_jpg" x="0" y="0" width="1024" height="768" xlink:href="./images/elephant_002_jpg.jpg"/>
+
+<image id="An_557165_f520_jpg" x="0" y="0" width="520" height="319" xlink:href="./images/An_557165_f520_jpg.jpg"/>
+
+<image id="maine_manufactured_home_jpg" x="0" y="0" width="500" height="415" xlink:href="./images/maine_manufactured_home_jpg.jpg"/>
+
+<image id="kadayi" x="0" y="0" width="490" height="403" xlink:href="./images/kadayi.jpg"/>
+
+<image id="kargos" x="0" y="0" width="400" height="405" xlink:href="./images/kargos.jpg"/>
+
+<image id="ganna" x="0" y="0" width="500" height="357" xlink:href="./images/ganna.jpg"/>
+
+<image id="gadi" x="0" y="0" width="346" height="510" xlink:href="./images/gadi.jpg"/>
+
+<pattern id="Pattern_1" patternUnits="userSpaceOnUse" patternTransform="matrix( 0.6024169921875, 0, 0, 0.6021270751953125, -50,-42.45) " width="166" height="141">
+<use xlink:href="#flash0_copy_2"/>
+</pattern>
+
+<pattern id="Pattern_2" patternUnits="userSpaceOnUse" patternTransform="matrix( 1, 0, 0, 1, -1006.85,-91) " width="490" height="403">
+<use xlink:href="#kadayi"/>
+</pattern>
+
+
+</defs>
+
+<mask id="Mask_Mask_1">
+<g transform="matrix( 3.794158935546875, 0, 0, 4.866180419921875, -258.55,1405.1) ">
+<g>
+<g>
+<path fill="#FFFFFF" stroke="none" d="
+M 279 -288.75
+L 68.15 -288.75 68.15 -165.45 279 -165.45 279 -288.75 Z"/>
+</g>
+</g>
+</g>
+</mask>
+
+<g id="bg" mask="url(#Mask_Mask_1)">
+<g>
+<g>
+<g>
+<path fill="#FFFFFF" stroke="none" d="
+M 799.95 600
+L 800 0 0.05 0 0 600 799.95 600 Z"/>
+</g>
+</g>
+</g>
+</g>
+
+<g id="heading" mask="url(#Mask_Mask_1)">
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 398.1,219.7) ">
+<g>
+<g>
+<g>
+<path fill="#FFFFFF" stroke="none" d="
+M 139 -136.05
+Q 130.0068359375 -135.7375 130 -126.05
+L 130 183.5
+Q 130.0064453125 192.7333984375 138.15 193.45 138.578515625 193.4853515625 139 193.5
+L 363.55 193.5
+Q 373.15546875 193.5 373.15 183.5
+L 373.15 -126.05
+Q 373.1501953125 -126.5609375 373.1 -127.05 372.666015625 -136.05 363.55 -136.05
+L 139 -136.05 Z"/>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_3" transform="matrix( 1, 0, 0, 1, 398.1,219.7) "/>
+
+<g id="Layer_4" transform="matrix( 1, 0, 0, 1, 398.1,219.7) ">
+<g id="Layer_2" transform="matrix( 1, 0, 0, 1, -246.15,256.5) ">
+<g id="Layer_2"/>
+
+<g id="Layer_1">
+<g>
+<g>
+<g>
+<path fill="url(#Pattern_1)" stroke="none" d="
+M 50 -42.45
+L -50 -42.45 -50 42.45 50 42.45 50 -42.45
+M 26 -20.6
+L 26.05 -20.6 26.05 24.6 26 24.6 -27.2 24.6 -27.2 -20.65 26 -20.65 26 -20.6 Z"/>
+
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 26 -20.6
+L 26 -20.65 -27.2 -20.65 -27.2 24.6 26 24.6 26 -20.6 Z"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, -246.15,256.5) ">
+<g transform="matrix( 1, 0, 0, 1, -72,-29.15) ">
+<clipPath id="Mask_Mask_2">
+<rect x="50.7" y="-2" width="42.6" height="73.75" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_2)" writing-mode="lr"><tspan x="52.8" y="49.55" baseline-shift="0%" kerning="0"  font-weight="bold" font-size="50" fill="#000000" xml:space="preserve">Mü</tspan></text>
+</g>
+</g>
+
+<g id="Layer_2" transform="matrix( 1, 0, 0, 1, -118.3,259.85) ">
+<g id="Layer_2"/>
+
+<g id="Layer_1">
+<g>
+<g>
+<g>
+<path fill="url(#Pattern_1)" stroke="none" d="
+M 50 -42.45
+L -50 -42.45 -50 42.45 50 42.45 50 -42.45
+M 26 -20.6
+L 26.05 -20.6 26.05 24.6 26 24.6 -27.2 24.6 -27.2 -20.65 26 -20.65 26 -20.6 Z"/>
+
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 26 -20.6
+L 26 -20.65 -27.2 -20.65 -27.2 24.6 26 24.6 26 -20.6 Z"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, -118.3,259.85) ">
+<g transform="matrix( 1, 0, 0, 1, -72,-32.65) ">
+<clipPath id="Mask_Mask_3">
+<rect x="49.75" y="-2" width="44.5" height="73.75" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_3)" writing-mode="lr"><tspan x="51.85" y="49.55" baseline-shift="0%" kerning="0"  font-weight="bold" font-size="50" fill="#000000" xml:space="preserve">ZÉ</tspan></text>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 152.5,-160.6) ">
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 3.45,4.5) ">
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 24.15,-0.05) ">
+<g transform="matrix( 1.814971923828125, 0, 0, 1.814971923828125, -115.75,-21) ">
+<clipPath id="Mask_Mask_4">
+<rect x="-2" y="-2" width="117.65" height="27.15" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_4)" writing-mode="lr"><tspan x="0" y="16.45" baseline-shift="0%" kerning="0" font-size="16.6" fill="#000000" xml:space="preserve">xÉÑlSU, oÉWÒûiÉ xÉÑlSU!</tspan></text>
+</g>
+
+<g transform="matrix( 1.814971923828125, 0, 0, 1.814971923828125, 103.35,-21) ">
+<clipPath id="Mask_Mask_5">
+<rect x="-2" y="-2" width="10.85" height="27.15" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_5)" writing-mode="lr"><tspan x="0" y="16.45" baseline-shift="0%" kerning="0" font-size="16.6" fill="#000000" xml:space="preserve"> </tspan></text>
+</g>
+</g>
+</g>
+
+<g id="Layer_2" transform="matrix( 1, 0, 0, 1, 3.45,4.5) "/>
+</g>
+
+<g id="Layer_2" transform="matrix( 1, 0, 0, 1, 4.75,256.5) ">
+<g id="Layer_2"/>
+
+<g id="Layer_1">
+<g>
+<g>
+<g>
+<path fill="url(#Pattern_1)" stroke="none" d="
+M 50 -42.45
+L -50 -42.45 -50 42.45 50 42.45 50 -42.45
+M 26 -20.6
+L 26.05 -20.6 26.05 24.6 26 24.6 -27.2 24.6 -27.2 -20.65 26 -20.65 26 -20.6 Z"/>
+
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 26 -20.6
+L 26 -20.65 -27.2 -20.65 -27.2 24.6 26 24.6 26 -20.6 Z"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 4.75,256.5) ">
+<g transform="matrix( 1, 0, 0, 1, -72,-32.65) ">
+<clipPath id="Mask_Mask_6">
+<rect x="56" y="-2" width="32" height="73.75" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_6)" writing-mode="lr"><tspan x="58.1" y="49.55" baseline-shift="0%" kerning="0"  font-weight="bold" font-size="50" fill="#000000" xml:space="preserve">aÉ</tspan></text>
+</g>
+</g>
+
+<g id="Layer_2" transform="matrix( 1, 0, 0, 1, 131.95,256.5) ">
+<g id="Layer_2"/>
+
+<g id="Layer_1">
+<g>
+<g>
+<g>
+<path fill="url(#Pattern_1)" stroke="none" d="
+M 50 -42.45
+L -50 -42.45 -50 42.45 50 42.45 50 -42.45
+M 26 -20.6
+L 26.05 -20.6 26.05 24.6 26 24.6 -27.2 24.6 -27.2 -20.65 26 -20.65 26 -20.6 Z"/>
+
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 26 -20.6
+L 26 -20.65 -27.2 -20.65 -27.2 24.6 26 24.6 26 -20.6 Z"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 131.95,256.5) ">
+<g transform="matrix( 1, 0, 0, 1, -72,-32.65) ">
+<clipPath id="Mask_Mask_7">
+<rect x="55.5" y="-2" width="33" height="73.75" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_7)" writing-mode="lr"><tspan x="57.6" y="49.55" baseline-shift="0%" kerning="0"  font-weight="bold" font-size="50" fill="#000000" xml:space="preserve">bÉ</tspan></text>
+</g>
+</g>
+
+<g id="Layer_2" transform="matrix( 1, 0, 0, 1, 260.5,256.5) ">
+<g id="Layer_2"/>
+
+<g id="Layer_1">
+<g>
+<g>
+<g>
+<path fill="url(#Pattern_1)" stroke="none" d="
+M 50 -42.45
+L -50 -42.45 -50 42.45 50 42.45 50 -42.45
+M 26 -20.6
+L 26.05 -20.6 26.05 24.6 26 24.6 -27.2 24.6 -27.2 -20.65 26 -20.65 26 -20.6 Z"/>
+
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 26 -20.6
+L 26 -20.65 -27.2 -20.65 -27.2 24.6 26 24.6 26 -20.6 Z"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 260.5,256.5) ">
+<g transform="matrix( 1, 0, 0, 1, -72,-25.65) ">
+<clipPath id="Mask_Mask_8">
+<rect x="52.9" y="-2" width="38.2" height="65.55" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_8)" writing-mode="lr"><tspan x="54.95" y="45" baseline-shift="0%" kerning="0"  font-weight="bold" font-size="60" fill="#000000" xml:space="preserve">Ró</tspan></text>
+</g>
+</g>
+</g>
+
+<g id="blink" transform="matrix( 1, 0, 0, 1, 398.1,219.7) ">
+<g id="Layer_1" transform="matrix( 1.00048828125, 0, 0, 0.80108642578125, -307.7,-62.35) ">
+<g id="Layer_1">
+<g>
+<g>
+<path stroke="#1BA348" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 51.825 -70.825
+L -51.825 -70.825
+Q -70.825 -70.825 -70.825 -51.825
+L -70.825 51.825
+Q -70.825 70.825 -51.825 70.825
+L 51.825 70.825
+Q 70.825 70.825 70.825 51.825
+L 70.825 -51.825
+Q 70.825 -70.825 51.825 -70.825 Z"/>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_2" transform="matrix( 1.00048828125, 0, 0, 0.80108642578125, -307.7,-62.35) ">
+<g id="Layer_1" transform="matrix( 0.75, 0, 0, 0.75, -178.35,287.15) ">
+<g id="Layer_3" transform="matrix( 1, 0, 0, 1, 235.95,-248.4) ">
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 9.35,0) ">
+<g transform="matrix( 3, 0, 0, 3, -64.55,-38.6) ">
+<clipPath id="Mask_Mask_9">
+<rect x="-2" y="-2" width="13.9" height="29.75" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_9)" writing-mode="lr"><tspan x="0" y="18.3" baseline-shift="0%" kerning="0" font-size="18.45" fill="#FF00FF" xml:space="preserve">M</tspan></text>
+</g>
+
+<g transform="matrix( 3, 0, 0, 3, -34.1,-38.6) ">
+<clipPath id="Mask_Mask_10">
+<rect x="-2" y="-2" width="31.95" height="29.75" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_10)" writing-mode="lr"><tspan x="0" y="18.3" baseline-shift="0%" kerning="0"  font-size="18.45" fill="#000000" xml:space="preserve">ücÉUÉ</tspan></text>
+</g>
+
+<g transform="matrix( 3, 0, 0, 3, 46,-33.05) ">
+<clipPath id="Mask_Mask_11">
+<rect x="-2" y="-2" width="10.2" height="24.45" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_11)" writing-mode="lr"><tspan x="0" y="16.45" baseline-shift="0%" kerning="0"  font-size="18.45" fill="#000000" xml:space="preserve"> </tspan></text>
+</g>
+</g>
+</g>
+
+<g id="Layer_2" transform="matrix( 1, 0, 0, 1, 235.95,-248.4) "/>
+</g>
+</g>
+</g>
+
+<g id="Layer_5" transform="matrix( 1, 0, 0, 1, 398.1,219.7) ">
+<g id="Layer_1" transform="matrix( 0.75, 0, 0, 0.75, -304.4,-62.35) ">
+<g transform="matrix( 0.2985382080078125, 0, 0, 0.3880462646484375, -59.7,-51.6) ">
+<use xlink:href="#Colorful_Kachra_copy_jpg"/>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 0.75, 0, 0, 0.75, 143.7,-62.65) ">
+<g transform="matrix( 0.149993896484375, 0, 0, 0.149993896484375, -76.8,-57.6) ">
+<use xlink:href="#elephant_002_jpg"/>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, -163.05,-61.3) ">
+<g transform="matrix( 0.235748291015625, 0, 0, 0.255340576171875, -61.3,-40.7) ">
+<use xlink:href="#An_557165_f520_jpg"/>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, 294.2,-61.3) ">
+<g transform="matrix( 0.2332763671875, 0, 0, 0.2332763671875, -58.3,-48.4) ">
+<use xlink:href="#maine_manufactured_home_jpg"/>
+</g>
+</g>
+
+<g id="Layer_2" transform="matrix( 1, 0, 0, 0.895233154296875, 77.2,102.15) ">
+<g>
+<g>
+<g>
+<path fill="#999900" stroke="none" d="
+M 52.8 -48.7
+Q 52.8 -58.7 42.8 -58.7
+L -45.6 -58.7
+Q -55.6 -58.7 -55.6 -48.7
+L -55.6 39.7
+Q -55.6 49.7 -45.6 49.7
+L 42.8 49.7
+Q 52.8 49.7 52.8 39.7
+L 52.8 -48.7 Z"/>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 0.895233154296875, 77.2,102.15) ">
+<g>
+<g>
+<g>
+<path fill="#FF0099" stroke="none" d="
+M 36.9 -26.95
+L 36.9 -36.75 -44.35 -36.75 -44.35 -26.95 11.5 -26.95 11.5 -17.5 -12.35 -17.5
+Q -15.3935546875 -17.5072265625 -17.5 -15.35 -18.983984375 -13.919140625 -19.5 -12.05 -19.701171875 -11.1509765625 -19.7 -10.15 -19.7044921875 -8.6724609375 -19.4 -7.15 -19.0279296875 -5.57421875 -18.35 -3.95 -17.5138671875 -2.0822265625 -16.25 -0.15 -15.2505859375 1.33125 -14 2.85 -12.8326171875 4.2587890625 -11.45 5.7 -3.8255859375 13.3841796875 1.05 13.4 2.0775390625 13.38515625 3.15 13.25 4.72421875 13.0884765625 6.45 12.65 7.873828125 12.356640625 9.55 11.8 11.4 11.2623046875 13.55 10.45 14.429296875 9.9853515625 15.15 9.95 15.356640625 9.9865234375 15.5 10 16.953515625 10.22265625 17.4 12.2 17.6634765625 13.1732421875 17.65 14.55 17.6716796875 18.1087890625 16.8 20.7 16.0806640625 22.8970703125 14.75 24.4 14.712890625 24.46171875 14.65 24.5 13.9 25.3763671875 12.95 26 11.4775390625 27.0662109375 9.55 27.5 8.367578125 27.779296875 7 27.8 6.8140625 27.825 6.6 27.8 3.6962890625 27.8201171875 0.6 26.8 -1.2689453125 26.17578125 -3.2 25.15 -5.0955078125 24.201953125 -7.05 22.85 -9.201953125 21.41328125 -11.45 19.5 -11.5876953125 19.3890625 -11.75 19.25 -14.083203125 17.1927734375 -16.4 14.7 -18.25703125 12.7552734375 -20.1 10.5 -20.3876953125 10.1763671875 -20.7 9.8 -22.3828125 7.7345703125 -24.1 5.4 -24.4404296875 4.930078125 -24.8 4.4 -27.42421875 0.4498046875 -30.1 -3.55
+L -38.2 3.95
+Q -38.1740234375 4.418359375 -37.65 5.4 -36.61484375 7.2509765625 -33.8 10.95 -33.0595703125 11.891015625 -32.25 12.95 -27.034765625 19.5306640625 -21.15 24.6 -20.9005859375 24.8029296875 -20.7 24.95 -18.58203125 26.7423828125 -16.4 28.3 -16.3126953125 28.3990234375 -16.25 28.45 -13.9748046875 30.113671875 -11.75 31.4 -9.3861328125 32.806640625 -7.05 33.8 -5.115234375 34.67578125 -3.2 35.25 -1.290234375 35.887890625 0.6 36.25 3.29453125 36.734765625 5.95 36.7 6.4794921875 36.731640625 7 36.7 8.316796875 36.69453125 9.55 36.55 11.3333984375 36.3890625 12.95 36 13.840625 35.8365234375 14.65 35.6 18.215234375 34.5671875 21.15 32.6 27.6384765625 28.4453125 29.35 20.7 30.0013671875 17.886328125 30 14.55 30.0033203125 13.355078125 29.9 12.2 29.6736328125 9.9380859375 29 7.9 28.39453125 5.9546875 27.35 4.2 24.7384765625 -0.166015625 20.15 -0.2 18.3646484375 -0.16328125 15.5 0.65 14.2029296875 1.0265625 12.65 1.55 11.0189453125 2.1265625 9.55 2.5 6.6076171875 3.2365234375 4.4 3.2 3.8380859375 3.2326171875 3.15 3 2.9904296875 2.9298828125 2.8 2.85 1.0322265625 2.0984375 -1.4 -0.15 -1.4876953125 -0.2240234375 -1.6 -0.3 -3.523828125 -2.2986328125 -4.8 -3.95 -5.302734375 -4.6009765625 -5.7 -5.2 -6.3197265625 -6.2361328125 -6.35 -6.95 -6.319140625 -7.044140625 -6.3 -7.15 -6.260546875 -7.6830078125 -6 -7.95 -5.8564453125 -8.0693359375 -5.65 -8.15 -5.5029296875 -8.1509765625 -5.35 -8.2 -4.7794921875 -8.2931640625 -4.15 -8.45
+L 23.8 -8.45 23.8 -26.95 36.9 -26.95
+M 34.75 -2.45
+Q 34.4048828125 -1.556640625 34.4 -0.55 34.4048828125 0.433984375 34.75 1.25 35.11015625 2.1798828125 35.85 2.9 37.291015625 4.3740234375 39.3 4.35 41.3763671875 4.3740234375 42.8 2.9 44.2740234375 1.4935546875 44.25 -0.55 44.2740234375 -2.608984375 42.8 -4.1 41.3763671875 -5.5115234375 39.3 -5.5 37.291015625 -5.5115234375 35.85 -4.1 35.11015625 -3.32734375 34.75 -2.45 Z"/>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 0.5625, 0, 0, 0.5625, -283.5,98.1) ">
+<g transform="matrix( 0.5625, 0, 0, 0.5625, 424.65,-46.35) ">
+<g>
+<g>
+<path fill="url(#Pattern_2)" stroke="none" d="
+M -584.2 190.85
+L -584.2 -25.95 -925.65 -25.95 -925.65 190.85 -584.2 190.85 Z"/>
+</g>
+</g>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, -113.2,98.15) ">
+<g transform="matrix( 0.2373046875, 0, 0, 0.2373046875, -47.45,-48.05) ">
+<use xlink:href="#kargos"/>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 1, -7.6,-61.8) ">
+<g transform="matrix( 0.2373046875, 0, 0, 0.2373046875, -59.35,-42.35) ">
+<use xlink:href="#ganna"/>
+</g>
+</g>
+
+<g id="Layer_1" transform="matrix( 1, 0, 0, 0.8941497802734375, 274.2,100.25) ">
+<g transform="matrix( 0.227813720703125, 0, 0, 0.227813720703125, -39.4,-58.1) ">
+<use xlink:href="#gadi"/>
+</g>
+</g>
+</g>
+
+<g id="imagename" transform="matrix( 1, 0, 0, 1, 398.1,219.7) "/>
+
+<g id="Layer_2" transform="matrix( 1, 0, 0, 1, 398.1,219.7) "/>
+</g>
+
+<g id="Actions">
+<g transform="matrix( 1, 0, 0, 1, 158.5,37.8) ">
+<clipPath id="Mask_Mask_12">
+<rect x="-110.55" y="-2" width="352.9" height="53.4" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_12)" writing-mode="lr"><tspan x="-108.55" y="16.85" baseline-shift="0%" kerning="0" font-weight="bold" font-size="17" fill="#666600" xml:space="preserve">lÉÏcÉå ÌSL aÉL A¤ÉUÉåÇ qÉåÇ xÉå cÉqÉMülÉåuÉÉsÉå ÍcÉ§É xÉå xÉÇoÉÎlkÉiÉ </tspan><tspan x="-108.55" y="42.55" baseline-shift="0%" kerning="0"  font-weight="bold" font-size="17" fill="#666600" xml:space="preserve">A¤ÉU MüÉå mÉWûcÉÉlÉMüU ExÉ mÉU ÎYsÉMü MüÐÎeÉL |</tspan></text>
+</g>
+</g>
+
+<g id="Layer_7"/>
+</svg>

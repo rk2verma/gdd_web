@@ -2,6 +2,10 @@
 <html>
 <head>
 	<meta http-equiv="Cache-control" content="no-cache">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<title>GDD Interface</title>
+   <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="../../assets/css/header.css">
      <link rel="stylesheet" href="../../assets/css/content.css">
      <link rel="stylesheet" href="../../assets/css/footer.css">
@@ -24,7 +28,7 @@
   		
   		<div class="header-right">
     		<a class="myCls active noselect btn" style="margin-right: 10px; width:150px">Class</a>
-    		<a id="home" class="noselect " href="#">Home</a>
+    		<a id="home" class="noselect " href="#">Select Class</a>
     	<!-- 	<a href="#contact">Contact</a>
     		<a href="#about">About</a> -->
 
@@ -36,19 +40,29 @@
 <div id="toc_container" ></div>
 </div>
 <div class="footer">
-	<div id="next_btn">
+	
+  <div id="toc">
+		<a class='active' href="#">HOME</a>
+  </div>
+  
+	<!-- <div id="back_btn1" style='float: left'>
+		<a class='active' href="#">Back</a>
+  </div>
+  <div id="next_btn1" style='float: left'>
+		<a class='active' href="#" >Next</a>
+	</div> -->
+	
+  <div id="next_btn">
 		<a class='active' href="#" >Next</a>
 	</div>
 	<div id="back_btn">
 		<a class='active' href="#">Back</a>
   </div>
-	<div id="toc">
-		<a class='active' href="#">TOC</a>
-  </div>
   	
 	</div>
 
 <script type="text/javascript">
+	
 	$('#next_btn').hide();
 	$('#back_btn').hide();
 	$('#home').click(function(){
@@ -79,9 +93,9 @@
   		$('.myCls').click(function(){
   			location.href = '../classes/class.html?id='+a;
   		});
-  			$('#toc_container').width('97%');
+  			$('#toc_container').width('100%');
   			$('#toc_container').height($(window).height()-$('.header').height()-$('.footer').height()-45);
-  			document.getElementById("toc_container").innerHTML='<object  type="text/html" data="'+b+'/toc.html?cls='+a+'"></object>';	
+  			document.getElementById("toc_container").innerHTML='<object  type="text/html" data="'+'toc.html?cls='+a+'&sub='+b+'"></object>';	
 
   			$('#toc_container object').width('100%');
   			$('#toc_container object').height('90%');

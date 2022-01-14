@@ -1,11 +1,12 @@
+var headTitle=" General Studies";
 var tocDes = [{
     "desc" : "1. Introducing Family Member's ",
     "ref" : "./gs/content/family/family.html"
-},
+}/*,
 {
     "desc" : "2. MCQ",
     "ref" : "./gs/content/family/family_mcq.html"
-}/*,
+},
 {
     "desc" : "3. Color-3",
     "ref" : "./cs/content/color/BAct_C03.html"
@@ -26,4 +27,4 @@ var tocDes = [{
     "desc" : "Jason",
     "ref" : "path"
 }*/];
-createTOC();
+createTOC(headTitle);

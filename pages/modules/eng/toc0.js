@@ -1,3 +1,4 @@
+var headTitle=" English";
 var tocDes = [{
     "desc" : "1. Alphabet - Capital Letters ",
     "ref" : "./eng/content/alphabet/Ch1.html?id=1"
@@ -8,11 +9,11 @@ var tocDes = [{
 },
 {
     "desc" : "3. Alphabet with phonics",
-    "ref" : "./eng/content/video/English Alphabets with Phonics.mp4"
+    "ref" : "./eng/content/video/videoPlayer.html?id=0"
 },
 {
     "desc" : "4. Number Names 1 to 20",
-    "ref" : "./eng/content/video/Number Names 1-20.mp4"
+    "ref" : "./eng/content/video/videoPlayer.html?id=1"
 },
 {
     "desc" : "5. Parts of Face ",
@@ -26,4 +27,4 @@ var tocDes = [{
     "desc" : "Jason",
     "ref" : "path"
 }*/];
-createTOC();
+createTOC(headTitle);

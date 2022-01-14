@@ -1,5 +1,5 @@
-var cov,tarArr,main_audio,music,tim,tot,myCol,objArr,randArr,curObj,path='./BAct_C01/',id;
-var corFeed=['Absolutly correct.','You identified colour correct.','Very good.'];
+var cov,tarArr,main_audio,music,tim,tot,myCol,objArr,randArr,curObj,path='./BAct_C01/',id,started=false;
+var corFeed=['Absolutly correct.','You identified colours correct.','Very good.'];
 var negFeed=['Its incorrect.','Oops you missed it.','Try again.'];
 function newColor(colArr,tarArr1,rid,cov1){
 	myCol=colArr;
@@ -46,18 +46,19 @@ function init() {
 
 function startActivity(){
 	curObj = randArr[Math.floor(Math.random()*tot)];
-	if(tim){
-		clearInterval(tim);
-	}
-	tim = setInterval(playSound,3000);
+	started=true;
 }
 function playSound(){ 
 	if(curObj==undefined){
 		startActivity();
 	}
+	if(tim){
+		clearInterval(tim);
+	}
+	tim = setInterval(playSound,3000);
 	var ss=curObj+1;
-	var audio=new Audio(''+path+ss+'.mp3');
-	audio.play();
+	music=new Audio(''+path+ss+'.mp3');
+	music.play();
 	$('#text340').html('');
 }
 function playFeedSound(bool){
@@ -90,6 +91,7 @@ function playFeedSound(bool){
 }
 function myclickHandler(e){
 			clearInterval(tim);
+			if(started==false){startActivity();}
 			if(curObj==randArr[objArr.indexOf('#'+e.currentTarget.id)]){
 				var ind=randArr.indexOf(curObj);
 				randArr.splice(ind,1);

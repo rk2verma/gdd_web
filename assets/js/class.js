@@ -34,31 +34,36 @@ function test() {
   	switch(cls){
   		case '0':
   			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').html('Class-KG');
-  			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.6,1) translate(40 59)');
+  			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.4,1) translate(48 59)');
   			$('#ve').hide();
   			$('#asse').hide();
   			
   		break;
   		case '1':
   			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').html('Class-1');
+        $('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.4,1) translate(68 59)');
   			$('#ve').hide();
   			
   		break;
   		case '2':
   			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').html('Class-2');
+        $('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.4,1) translate(68 59)');
   		break;
   		case '3':
   			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').html('Class-3');
+        $('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.4,1) translate(68 59)');
   		break;
   		case '4':
   			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').html('Class-4');
+        $('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.4,1) translate(68 59)');
   		break;
   		case '5':
   			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').html('Class-5');
+        $('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.4,1) translate(68 59)');
   		break;
   		case '6':
   			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').html('Adolescense & Adults');
-  			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.6,1) translate(40 59)');
+  			$('.f09fc816-c030-4cf9-b9da-0df32c29732b').attr('transform','scale(1.3,1) translate(40 59)');
   			$('#b638414a-93ce-44ce-bcbb-06149e4f0ca1').attr('transform','scale(0.8,1) translate(0 0)');
   			$('.a357e410-74aa-44cc-a75e-94e545b793ca').attr('transform','scale(2.21,1) translate(-30 0)');
   			$('.topBanner').attr('viewBox','0 0 638.56 75.35');

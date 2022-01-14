@@ -1,0 +1,9 @@
+<!Doctype html>
+<html>
+<body>
+<div class="fireworks-example"></div>
+</body>
+<script src="./fireworks.js"></script>
+<script src="./main.js"></script>
+
+</html>

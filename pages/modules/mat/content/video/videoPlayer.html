@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      video {
+        overflow-y: hidden;
+      }
+
+
+      /* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container video {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  background-color: #599;
+  color: greenyellow;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: blueviolet;
+}
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <video width="100%" height="" overflow="hidden" autoplay="true" controls="" controlsList="nodownload" preload="auto" id="_video"></video>
+    
+  </div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="list.json"></script>
+<script>
+const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    displayId = urlParams.get('id');
+    //console.log(listIt[displayId])
+ var xhr = new XMLHttpRequest();
+xhr.responseType = 'blob';
+
+xhr.onload = function() {
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  var reader = new FileReader();
+  
+  reader.onloadend = function() {
+  
+    var byteCharacters = atob(reader.result.slice(reader.result.indexOf(',') + 1));
+    
+    var byteNumbers = new Array(byteCharacters.length);
+
+    for (var i = 0; i < byteCharacters.length; i++) {
+      
+      byteNumbers[i] = byteCharacters.charCodeAt(i);
+      
+    }
+
+    var byteArray = new Uint8Array(byteNumbers);
+    var blob = new Blob([byteArray], {type: 'video/mp4'});
+    var url = URL.createObjectURL(blob);
+    
+    
+    document.getElementById('_video').src = url;
+
+    //URL.revokeObjectURL(url);
+    $('.container').height($('#_video').height());
+    
+  }
+  
+  reader.readAsDataURL(xhr.response);
+
+  
+};
+
+xhr.open('GET', './'+listIt[displayId]+'.mp4');
+xhr.send();
+
+  
+</script>
+</body>
+</html>
+
+

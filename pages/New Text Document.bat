@@ -1,0 +1,1 @@
+chrome.exe --user-data-dir="C://wamp64/www/gddTest_web/pages" --disable-web-security

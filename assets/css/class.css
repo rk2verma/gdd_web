@@ -1,0 +1,63 @@
+.homepagemain {
+    display: flex;
+    background-image: url(../images/subjecthome_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh);
+    width: 100%;
+
+}
+
+.container-fluid {
+    height: 100vh;
+
+}
+
+.row {
+    height: calc(100vh/3);
+}
+
+.col {
+    width: calc(100vw/3);
+    text-align: center;
+}
+
+.col img {
+    margin: 0px;
+    bottom: -0px;
+}
+
+.englishSvg:hover {
+    cursor: pointer;
+}
+.noselect {
+     -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;      
+}
+.btn {
+    cursor: pointer;
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.row .col {
+  float: left;
+  width: 25%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .row .col {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row .col {
+    width: 100%;
+  }
+}

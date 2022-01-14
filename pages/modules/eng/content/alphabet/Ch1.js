@@ -32,8 +32,8 @@ function init() {
 	var tot = txtArr.length;
 	aud=document.getElementById('main_audio');
 	aud.onended=function(){
-		var mainAud=new Audio("audio/EAct01/inst"+displayId+".mp3");
-		mainAud.play();
+		aud=new Audio("audio/EAct01/inst"+displayId+".mp3");
+		aud.play();
 	}
 	for(var i=0;i<tot;i++){
 		var j = document.getElementById(txtArr[i]);
@@ -102,7 +102,8 @@ function onclickMethod(e){
 		document.getElementById('myanimsvg').src="images/Anim_"+kk+".html";
 	}
 
-	
+	if(music){music.pause();}
+	if(aud){aud.pause();}
 
 	if(timoutTimer) { clearTimeout(timoutTimer);};
 	 timoutTimer = setTimeout(myFunction, 2500);

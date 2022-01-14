@@ -2,7 +2,10 @@
 var curAns,qid=0,score=0;	
 
 (function(){
-	setQuestion(qid);	
+
+	$('#tspan501').html(qTitle);
+	$('#tspan234').html(headTitle);
+	setQuestion(qid);
 })();
 
 function setQuestion(j){ 
@@ -15,6 +18,7 @@ function setQuestion(j){
 		}else{
 			$('#tspan492').html(""); 
 		}
+
 		$('#tspan287').html(questions[j].choices[0]);
 		$('#tspan338').html(questions[j].choices[1]);
 		$('#tspan391').html(questions[j].choices[2]);
@@ -22,6 +26,8 @@ function setQuestion(j){
 
 		$('#box, #g311,#g364,#g417').click(function(){
 			$('#btn_submit,#btn_next ').css('cursor','pointer');
+			$('#btn_submit').css('opacity','1');
+			$('#btn_next').css('opacity','1');
 			switch($(this).attr('id')){
 				case 'box':
 					$('circle').attr('cy',448.5);
@@ -56,11 +62,13 @@ function setInitialStyle() {
 	$('#conclusion_ost, #tspan490,#tspan492,#tspan287,#tspan338,#tspan391,#tspan444 ').attr('class','disabled1');
 	$('#conclusion_ost').css('cursor','pointer');
 	$('#btn_submit,#btn_next ').css('cursor','default');
+	$('#btn_submit').css('opacity','0.4');
+	$('#btn_next').css('opacity','0');
 	$('#box, #g311,#g364,#g417').css('cursor','pointer');
 	$('#radioSel circle').css('fill','#333333');	
 	$('#btn_submit').css('display','block');
 	$('#cover-rect').css('display','none');
-	$('#tspan234').html(headTitle);
+	
 }
 $('#btn_submit').click(function(){
 		if(curAns>-1){
@@ -69,11 +77,17 @@ $('#btn_submit').click(function(){
 			$('#radioSel circle').css('fill','#777777');
 			var y0 = 65+curAns*35;
 			var corAns = questions[qid].correctAnswer;
+			if(medium=='H'){
+				var kk=Math.ceil(Math.random()*8);
+			}
 			if(corAns==curAns){
 				$('#corSym').css('display','block');
 				$('#corSym').attr('transform','translate(-170,'+y0+')');
 				var music = new Audio('../../../../audio/mcq/MCQcorrect.mp3');
-      	score++;
+				if(medium=='H'){
+					music = new Audio('../../../../audio/feedback_hindi/Correct'+kk+'.mp3');
+				}
+      			score++;
 			}else{
 				$('#corSym').css('display','block');
 				$('#incSym').css('display','block');
@@ -81,6 +95,9 @@ $('#btn_submit').click(function(){
 				$('#incSym').attr('transform','translate(-170,'+y0+')');
 				$('#corSym').attr('transform','translate(-170,'+y1+')');
 				music = new Audio('../../../../audio/mcq/MCQincorrect.mp3');
+				if(medium=='H'){
+					music = new Audio('../../../../audio/feedback_hindi/Wrong'+kk+'.mp3');
+				}
 			}
 			music.play();
 		}

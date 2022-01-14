@@ -60,8 +60,11 @@ function setQuestion(j){
       music.play();
       music.onended=function(){
         music = new Audio('./family/inst4.mp3');
+        $('#ost_txt #text_ost1').css('display','none');
+        $('#ost_txt #text_ost2').css('display','block');
         music.play();
         music.onended=function(){
+          $('#ost_mc').css('display','none');
           music = new Audio('./family/mcq1.mp3');
           music.play();
         }
@@ -69,6 +72,7 @@ function setQuestion(j){
     }
 
     $('#choice1, #choice2,#choice3,#choice4').click(function(){
+      $('#ost_mc').hide();
       $('#btn_submit,#btn_next ').css('cursor','pointer');
       switch($(this).attr('id')){
         case 'choice1':
@@ -125,7 +129,7 @@ $('#btn_submit').click(function(){
       if(corAns==curAns){
         $('#corSym').css('display','block');
         $('#corSym').attr('transform','translate(-170,'+y0+')');
-        var music = new Audio('../../../../audio/mcq/MCQcorrect.mp3');
+        music = new Audio('../../../../audio/mcq/MCQcorrect.mp3');
         score++;
       }else{
         $('#corSym').css('display','block');
@@ -153,6 +157,7 @@ $('#popup_sub_btn').click(function(){
 $('#btn_next').click(function(){
   qid++;
   if(qid<=questions.length-1){
+    if(music){music.pause();}
     setQuestion(qid);
     music = new Audio('./family/mcq'+(qid+1)+'.mp3');
     music.play();

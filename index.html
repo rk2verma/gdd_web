@@ -6,7 +6,6 @@
     <!--Made with love by Mutiullah Samim -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="manifest" href="./manifest.json">
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <!--Bootsrap 4 CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -62,7 +61,7 @@
                             <input type="text" class="form-control" placeholder="Activation Code">
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Activate" onclick="initfs();"
+                            <input type="submit" value="Activate" onclick="location.href='./pages/intro.html'"
                                 class="btn float-right login_btn">
                         </div>
                     </form>
@@ -79,14 +78,7 @@
 </body>
 <script type="text/javascript">
     
-    function initfs() {
-        var el = document.documentElement,
-            rfs = el.requestFullScreen
-            || el.webkitRequestFullScreen
-            || el.mozRequestFullScreen;
-        rfs.call(el);
-        location.href='./pages/intro.html';
-    };
+   
 </script>
 
 </html>

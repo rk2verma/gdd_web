@@ -11,7 +11,7 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -29,10 +29,15 @@
   background-color: #04AA6D;
   color: white;
 }
+.footer div a.not-active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 #toc{
   float: left;
   background-color: #3b7304; 
-  padding: 2px;
+  padding: 0px;
 } 
 #next_btn,#back_btn{
   float: right; 
@@ -40,7 +45,16 @@
   padding: 2px;
 }
 
-.footer div a.not-active {
-  background-color: #04AA6D;
-  color: white;
+#next_btn1,#back_btn1{
+  float: center; 
+  background-color: #3b7304; //#44A6DE; 
+  padding: 2px;
 }
+
+.footer div #next_btn1,.footer div #back_btn1 {
+  background-color: #04AA6D;
+  float: center;
+  color: white;
+  width: 25%;
+}
+

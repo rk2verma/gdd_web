@@ -1,7 +1,7 @@
-var tocData,curPage=-1;
+var tocData,curPage=-1,resolution;
 var btnRef=['#back_btn','#next_btn'];
 
-function setData(refVar,pp) { 
+function setData(refVar,pp,res) { 
 	tocData = refVar;
 	curPage=pp;
 	loadPage();	
@@ -17,25 +17,47 @@ function onBack(){
 }
 function loadPage(){
 	var b=(tocData[curPage].ref);
-	console.log(b);
+	//console.log(b);
 	//b='./eng/content/alphabet/Ch1.html?id=1';
-	$('#toc_container').width('97%');
-  			$('#toc_container').height($(window).height()-$('.header').height()-$('.footer').height()-25);
+	
+  $('#toc_container').height($(window).innerHeight()-$('.header').height()-$('.footer').height());
 	document.getElementById("toc_container").innerHTML='<object  type="text/html" data="'+b+'"></object>';
 	$('#toc_container object').width('100%');
   			$('#toc_container object').height('100%');
   			$('#toc_container object').css('padding','0');
 
+  		updateSize();
 	//document.getElementById("toc_container").innerHTML='<object  type="text/html" data="'+b+'/toc.html?cls='+a+'"></object>';	
 	//testFn();
 	updateBtn(curPage,tocData.length);	
+}
+$(window).resize(function(){updateSize();});
+function updateSize(){
+			var wid = 	$(window).width();
+  		var hei = 	$(window).height();
+  		var ratio = wid/hei; //console.log(wid,hei,ratio,' is ratio')
+  		 if(ratio>2.5){
+  		 	$('#toc_container').width('60%');
+  		 }else if(ratio>2.3){
+  		 	$('#toc_container').width('68%');
+  		 }else if(ratio>2.1){
+  		 	$('#toc_container').width('76%');
+  		 }else if(ratio>1.9){
+  		 	$('#toc_container').width('84%');
+  		 }else if(ratio>1.7){
+  		 	$('#toc_container').width('92%');
+  		 }else if(ratio>1.5){
+  		 	$('#toc_container').width('100%');
+  		 }
+  		 //$('#toc_container').height($(window).innerHeight()-$('.header').height()-$('.footer').height());
+  		//console.log('resizing');
 }
 function updateBtn(a,b){
 	$(btnRef[0]).show();
 	$(btnRef[1]).show();
 	//$('#'+btnRef[1]).show();
 	//$('#toc').hide();
-	console.log(a,b,a==3)
+	//console.log(a,b,a==3)
 	if(a==0){
 		$(''+btnRef[0]+' a').removeClass('active');
 		$(''+btnRef[1]+' a').addClass('active');
@@ -49,7 +71,6 @@ function updateBtn(a,b){
 		$(''+btnRef[0]+' a').addClass('active');
 		$(''+btnRef[1]+' a').addClass('active');
 	}
-
 }
 function addListener(){
 	$(btnRef[0]).click(function() {
